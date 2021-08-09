@@ -7,7 +7,7 @@ const router = Router();
 router.get("/videos", videoCtrl.getVideos);
 router.get("/video/:id", videoCtrl.getVideo);
 router.post("/videos", videoCtrl.createVideos);
-router.delete("/videos", videoCtrl.deleteVideo);
-router.put("/videos", videoCtrl.updateVideos);
+router.delete("/video/:id", videoCtrl.deleteVideo);
+router.put("/videos/:id", videoCtrl.updateVideos);
 
 export default router;
